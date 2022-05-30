@@ -1,5 +1,5 @@
-import { Badge, Mail, Search, ShoppingCartOutlined } from "@mui/icons-material";
-// import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import Badge from "@mui/material/Badge";
+import { Search, ShoppingCartOutlined } from "@mui/icons-material";
 import React from "react";
 import styled from "styled-components";
 
@@ -31,11 +31,13 @@ const Right = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 `;
 
 const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
+  margin-left: 25px;
 `;
 
 const Language = styled.span`
@@ -63,7 +65,7 @@ const Navbar = () => {
           <Language>EN</Language>
           <SearchContainer>
             <Input />
-            <Search />
+            <Search style={{ color: "grey", fontSize: 16 }} />
           </SearchContainer>
         </Left>
         <Center>
@@ -75,9 +77,6 @@ const Navbar = () => {
           <MenuItem>
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined />
-            </Badge>
-            <Badge badgeContent={4} color="success">
-              <Mail color="action" />
             </Badge>
           </MenuItem>
         </Right>
