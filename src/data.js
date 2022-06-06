@@ -27,16 +27,19 @@ export const categories = [
     id: 1,
     img: "https://media.istockphoto.com/photos/professional-cook-feeling-satisfied-with-her-new-menu-picture-id1312204470?b=1&k=20&m=1312204470&s=170667a&w=0&h=73FjNBGtZqv3XzmBiPh9abBKvXHfrkJgEsjLTLFcT8k=",
     title: "CHEF STYLE",
+    cat: "woman",
   },
   {
     id: 2,
     img: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dW5pZm9ybXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     title: "FORMAL STYLE",
+    cat: "formal",
   },
   {
     id: 3,
     img: "https://images.unsplash.com/photo-1621841730147-3cb4dbe0c5c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fGVpZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     title: "RAMADHAN STYLE",
+    cat: "man",
   },
 ];
 
