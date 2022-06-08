@@ -161,17 +161,20 @@ const Cart = () => {
     setStripeToken(token);
   };
 
+  console.log(stripeToken);
   useEffect(() => {
     const makeRequest = async () => {
       try {
         const res = await userRequest.post("/checkout/payment", {
           tokenId: stripeToken.id,
-          amount: cart.total * 100,
+          // amount: cart.total * 100,
+          amount: 500,
         });
         navigate("/success", { data: res.data });
       } catch (err) {}
     };
     stripeToken && makeRequest();
+    // stripeToken && cart.total >= 1 && makeRequest();
   }, [stripeToken, cart.total, navigate]);
   return (
     <Container>
